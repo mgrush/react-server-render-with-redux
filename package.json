@@ -2,7 +2,9 @@
   "name": "react-server-render-with-redux",
   "version": "1.0.0",
   "description": "使用React + NodeJS + Redux实现的服务端渲染方案",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mgrush/react-server-render-with-redux.git"
@@ -29,6 +31,7 @@
     "express": "^4.14.0",
     "glob": "^7.0.5",
     "history": "^2.0.0",
+    "koa-router": "^5.4.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "react-redux": "^4.4.5",

@@ -8,7 +8,7 @@ module.exports	= {
 					<title>${options.title || ""}</title>
 				</head>
 				<body>
-					<div id="root">${options.content || ""}</div>
+					<div id="root"><div>${options.content}</div></div>
 
 					<script type="text/javascript">
 						window.__INITIAL_STATE__ = ${JSON.stringify(options.initState)}

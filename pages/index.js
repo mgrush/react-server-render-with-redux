@@ -2,7 +2,7 @@ import "babel-polyfill";
 
 import React				from "react";
 import ReactDOM				from "react-dom";
-import routes				from "../Routes";
+import routes				from "../routes";
 
 import { fromJS }							from "immutable";
 import { Provider }							from "react-redux";

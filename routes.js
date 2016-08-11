@@ -1,24 +1,25 @@
-import Container			from "./components/Container";
+import App			from "./components/App";
+import Books		from "./components/Books";
+import Movies		from "./components/Movies";
 
-if( typeof require.ensure !== "function" ){
-	require.ensure		= (d, c) => c(require);
+if (typeof require.ensure !== 'function'){
+	require.ensure = (d, c) => c(require);
 }
 
 export default {
-	path		: "/",
-	component	: Container,
+	path : "/",
+	component : App,
 
 	getChildRoutes(location, callback){
 		require.ensure([], (require) => {
 			callback(null, [
-				require("./components/Books"),
-				require("./components/Movies")
+				Books,
+				Movies
 			]);
 		});
 	},
 
-	indexRoute	: {
-		component	: require("./components/Books")			  
+	indexRoute : {
+		component : Books
 	}
-}
-
+};
